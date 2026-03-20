@@ -267,7 +267,7 @@ GSS-OS 当前理论包括：
 
 ## 许可证
 
-[MIT](LICENSE)
+[YLv.1ccc](LICENSE)
 ```
 
 ---
