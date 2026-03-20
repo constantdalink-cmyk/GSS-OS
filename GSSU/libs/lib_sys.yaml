@@ -1,0 +1,18 @@
+calc:
+  desc: 计算器
+  launch: calc.exe
+chrome:
+  desc: Chrome浏览器
+  launch: chrome.exe
+cmd:
+  desc: 命令行
+  launch: cmd.exe
+edge:
+  desc: Edge浏览器
+  launch: msedge.exe
+explorer:
+  desc: 资源管理器
+  launch: explorer.exe
+notepad:
+  desc: 记事本
+  launch: notepad.exe

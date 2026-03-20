@@ -1,0 +1,4 @@
+欢迎界面:
+  desc: HOW-code tool
+  file: tools\欢迎界面.py
+  launch: python tools\欢迎界面.py
