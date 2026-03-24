@@ -1,0 +1,124 @@
+desktop:
+  帮我打开一个不存在的程序_foobar123:
+    fail: 0
+    keys: o 一个不存在的程序
+    status: active
+    success: 1
+    verify: 'ok: 窗口:管理员: Windows PowerShell→一个不存在的程序 | +窗口:一个不存在的程序 | +进程:cmd.exe
+      | +进程:audiodg.exe'
+  帮我把刚才保存的排序代码里的_bubble_sort_改成支:
+    fail: 0
+    keys: "t def bubble_sort(arr, descending=True):\n    for i in range(len(arr)):\n\
+      \        for j in range(0, len(arr)-i-1):\n            if descending:\n    \
+      \            if arr[j] < arr[j+1]:\n                    arr[j], arr[j+1] = arr[j+1],\
+      \ arr[j]\n            else:\n                if arr[j] > arr[j+1]:\n       \
+      \             arr[j], arr[j+1] = arr[j+1], arr[j] | hk @1+s"
+    status: active
+    success: 1
+    verify: "ok: 剪贴板→def bubble_sort(arr, descending=True):\n    for i i"
+  帮我用记事本写一段简单的_python_计算器代码_包含加减:
+    fail: 0
+    keys: "o notepad | t def add(x, y):\n    return x + y\n\ndef subtract(x, y):\n\
+      \    return x - y\n\ndef multiply(x, y):\n    return x * y\n\ndef divide(x,\
+      \ y):\n    if y == 0:\n        return \"Error! Division by | hk @1+s"
+    status: active
+    success: 1
+    verify: ok:saved:C:\Users\rwxh5\Documents\GSSU_WORK\gssu_20260323_033337.txt
+foobar123:
+  帮我打开一个不存在的程序_foobar123:
+    fail: 0
+    keys: o foobar123
+    status: active
+    success: 4
+    verify: 'ok: 窗口:管理员: Windows PowerShell→foobar123 | +窗口:foobar123 | +进程:audiodg.exe
+      | +进程:cmd.exe'
+notepad:
+  帮我打开记事本:
+    fail: 0
+    keys: o notepad
+    status: active
+    success: 7
+    verify: 'ok: +窗口:无标题 - Notepad | +进程:notepad.exe'
+  帮我打开记事本_输入测试_然后保存:
+    fail: 0
+    keys: o notepad | t 测试 | hk @1+s
+    status: active
+    success: 24
+    verify: ok:saved
+  帮我打开记事本并输入测试:
+    fail: 0
+    keys: o notepad | t 测试
+    status: active
+    success: 3
+    verify: 'ok: +窗口:*测试 - Notepad'
+  帮我把计算器代码和排序代码合并成一个文件_保存为_combi:
+    fail: 0
+    keys: o notepad
+    status: active
+    success: 1
+    verify: 'ok: 窗口:管理员: Windows PowerShell→gssu_20260323_034926.txt - Notepad | +窗口:gssu_20260323_034926.txt
+      - Notepad | +进程:notepad.exe'
+  帮我用记事本写一段_hello_world_代码并保存:
+    fail: 0
+    keys: o notepad | t print("Hello, World!") | hk @1+s
+    old_versions:
+    - keys: "o notepad | t public class HelloWorld {\n    public static void main(String[]\
+        \ args) {\n        System.out.println(\"Hello World\");\n    }\n} | hk @1+s"
+      status: undone
+    - keys: o notepad | t print("Hello, World!") | hk @1+s
+      status: undone
+    - keys: "o notepad | t public class HelloWorld {\n    public static void main(String[]\
+        \ args) {\n        System.out.println(\"Hello, World!\");\n    }\n} | hk @1+s"
+      status: undone
+    - keys: o notepad | t def add(x, y):\n    return x + y\n\ndef sub(x, y):\n    return
+        x - y | hk @1+s
+      status: undone
+    status: active
+    success: 8
+    verify: ok:saved:C:\Users\rwxh5\Documents\GSSU_WORK\gssu_20260323_225917.txt
+  帮我用记事本写一段排序算法代码并保存:
+    fail: 0
+    keys: "o notepad | t def bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n\
+      \        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n    \
+      \            arr[j], arr[j+1] = arr[j+1 | hk @1+s"
+    old_versions:
+    - keys: o notepad | hk @1+s
+      status: undone
+    status: active
+    success: 2
+    verify: ok:saved:C:\Users\rwxh5\Documents\GSSU_WORK\gssu_20260323_034926.txt
+  帮我用记事本写一段简单的_python_计算器代码_包含加减:
+    fail: 0
+    keys: "o notepad | t def add(x, y):\n    return x + y\n\ndef subtract(x, y):\n\
+      \    return x - y\n\ndef multiply(x, y):\n    return x * y\n\ndef divide(x,\
+      \ y):\n    if y != 0:\n        return x / y\n    else: | hk @1+s"
+    status: active
+    success: 5
+    verify: ok:saved:C:\Users\rwxh5\Documents\GSSU_WORK\gssu_20260323_030612.txt
+  帮我用记事本写一首诗并保存:
+    fail: 0
+    keys: 'o notepad | t 山川千里外，烟雨共长亭。
+
+      月下思故人，风前念旧情。
+
+      落花随流水，岁月逐浮云。
+
+      悠悠天地间，此情难自禁。 | hk @1+s'
+    old_versions:
+    - keys: o notepad | t 山川如画意悠悠，春风拂面柳丝柔。 | hk @1+s
+      status: undone
+    status: active
+    success: 2
+    verify: ok:saved:C:\Users\rwxh5\Documents\GSSU_WORK\gssu_20260323_034056.txt
+  请帮我打开笔记本:
+    fail: 0
+    keys: o notepad
+    status: active
+    success: 4
+    verify: 'ok: +窗口:无标题 - Notepad'
+  请帮我打开记事本:
+    fail: 0
+    keys: o notepad
+    status: active
+    success: 1
+    verify: 'ok: +窗口:无标题 - Notepad | +进程:notepad.exe'
